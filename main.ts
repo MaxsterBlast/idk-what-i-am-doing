@@ -525,6 +525,7 @@ let enemy2: Sprite = null
 let Enemy1: Sprite = null
 let PlayerSprite: Sprite = null
 let canBeHit = false
+scene.setBackgroundImage(assets.image`default background`)
 canBeHit = true
 PlayerSprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -547,11 +548,17 @@ PlayerSprite = sprites.create(img`
 info.setLife(3)
 info.setScore(0)
 PlayerSprite.setStayInScreen(true)
-scroller.setLayerImage(scroller.BackgroundLayer.Layer0, assets.image`sky`)
+scroller.setLayerImage(scroller.BackgroundLayer.Layer0, assets.image`
+            sky
+            `)
 scroller.scrollBackgroundWithSpeed(-10, 0, scroller.BackgroundLayer.Layer0)
-scroller.setLayerImage(scroller.BackgroundLayer.Layer1, assets.image`coral`)
+scroller.setLayerImage(scroller.BackgroundLayer.Layer1, assets.image`
+            coral
+            `)
 scroller.scrollBackgroundWithSpeed(-20, 0, scroller.BackgroundLayer.Layer1)
-scroller.setLayerImage(scroller.BackgroundLayer.Layer2, assets.image`sand`)
+scroller.setLayerImage(scroller.BackgroundLayer.Layer2, assets.image`
+            sand
+            `)
 scroller.scrollBackgroundWithSpeed(-30, 0, scroller.BackgroundLayer.Layer2)
 game.onUpdateInterval(randint(1000, 40000), function () {
     coin = sprites.create(img`

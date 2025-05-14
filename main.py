@@ -559,17 +559,17 @@ scroller.set_layer_image(scroller.BackgroundLayer.LAYER0,
     assets.image("""
         sky
         """))
-scroller.scroll_background_with_speed(-20, 0, scroller.BackgroundLayer.LAYER0)
+scroller.scroll_background_with_speed(-10, 0, scroller.BackgroundLayer.LAYER0)
 scroller.set_layer_image(scroller.BackgroundLayer.LAYER1,
     assets.image("""
         coral
         """))
-scroller.scroll_background_with_speed(-30, 0, scroller.BackgroundLayer.LAYER1)
+scroller.scroll_background_with_speed(-20, 0, scroller.BackgroundLayer.LAYER1)
 scroller.set_layer_image(scroller.BackgroundLayer.LAYER2,
     assets.image("""
         sand
         """))
-scroller.scroll_background_with_speed(-40, 0, scroller.BackgroundLayer.LAYER2)
+scroller.scroll_background_with_speed(-30, 0, scroller.BackgroundLayer.LAYER2)
 
 def on_update_interval():
     global coin
